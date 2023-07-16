@@ -1,0 +1,71 @@
+.button {
+    border-radius: 4px;
+    background-color: #67e07b;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+  body{
+      background-color: #ece8dd;
+  }
+  h1{
+      font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    color: #9e0000;
+  }
+
+  ol {
+    list-style: none;
+    counter-reset: steps;
+  }
+  ol li {
+    counter-increment: steps;
+  }
+  ol li::before {
+    content: counter(steps);
+    margin-right: 0.5rem;
+    background: #ff6f00;
+    color: white;
+    width: 1.2em;
+    height: 1.2em;
+    border-radius: 50%;
+    display: inline-grid;
+    place-items: center;
+    line-height: 1.2em;
+  }
+  ol ol li::before {
+    background: darkorchid;
+  }
