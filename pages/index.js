@@ -85,7 +85,7 @@ import styles from "../styles/home.module.css"
 import { useRouter } from 'next/router';
 import { useState } from 'react';
 import { useEffect } from 'react';
-export default function () {
+export default function Home () {
     const router = useRouter();
      const [time , setTime]= useState(3);
 

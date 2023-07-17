@@ -57,7 +57,7 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
 import { firestore } from '../../lib/firebase'
-
+import Link from 'next/link'
 import styles from '../../styles/home.module.css'
 const Navbar = () => {
     return (
@@ -75,14 +75,14 @@ const Navbar = () => {
             <a class="btn btn-dark btn-md" href="/issuer">Issuer</a>
           </li> */}
           <li className="nav-item text-white">
-                                      <a className="btn btn-dark btn-md" href="/dashboard_i">Dashboad</a>
+                                      <Link className="btn btn-dark btn-md" href="/dashboard_i">Dashboad</Link>
                                   </li>
                                  
                                   {/* <li class="nav-item text-white">
             <a class="btn btn-dark btn-md" href="/upload">Upload</a>
           </li> */}
                                   <li className="nav-item text-white">
-                                      <a className="btn btn-dark btn-md" href='/front'>SignOut</a>
+                                      <Link className="btn btn-dark btn-md" href='/front'>SignOut</Link>
                                   </li>
          
         

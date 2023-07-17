@@ -4,6 +4,7 @@ import { firestore } from '../../lib/firebase'
 import styles from '../../styles/docs.module.css'
 import { useCookies } from "react-cookie";
 import { useRouter } from 'next/router';
+import Link from 'next/link';
 function File({ token }) {
 
     const [data, setData] = useState(null);
@@ -31,14 +32,14 @@ function File({ token }) {
             <ul class="navbar-nav gap-5 " >
             
               <li className="nav-item text-white">
-                                          <a className="btn btn-dark btn-md" href="/dashboard_i">Dashboad</a>
+                                          <Link className="btn btn-dark btn-md" href="/dashboard_i">Dashboad</Link>
                                       </li>
                                      
                                       <li class="nav-item text-white">
-                <a class="btn btn-dark btn-md" href="/upload">Upload</a>
+                <Link class="btn btn-dark btn-md" href="/upload">Upload</Link>
               </li>
                                       <li className="nav-item text-white">
-                                          <a className="btn btn-dark btn-md" href='/front'>SignOut</a>
+                                          <Link className="btn btn-dark btn-md" href='/front'>SignOut</Link>
                                       </li>
              
             
