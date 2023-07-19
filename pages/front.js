@@ -16,10 +16,10 @@ const Navbar = () => {
     <div class="collapse navbar-collapse " id="navbarNavDropdown">
       <ul class="navbar-nav gap-5 " >
         <li class="nav-item text-white ">
-          <Link class="btn btn-dark btn-md" href="/verifier">Verifier <span class="sr-only"></span></Link>
+          <a class="btn btn-dark btn-md" href="/verifier">Verifier <span class="sr-only"></span></a>
         </li>
         <li class="nav-item text-white">
-          <Link class="btn btn-dark btn-md" href="/issuer">Issuer</Link>
+          <a class="btn btn-dark btn-md" href="/issuer">Issuer</a>
         </li>
        
        
@@ -71,7 +71,7 @@ const PageLayout = ({ children }) => {
   );
 };
 
-const  Front= () => {
+const  front= () => {
   const route = useRouter();
   return (
     <div className>
@@ -93,4 +93,4 @@ const  Front= () => {
   );
 };
 
-export default Front;
+export default front;

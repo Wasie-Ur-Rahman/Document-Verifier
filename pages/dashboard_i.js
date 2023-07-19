@@ -370,6 +370,7 @@ import { useCookies } from "react-cookie";
 import Link from 'next/link'
 import { MDBTable, MDBTableHead, MDBTableBody } from 'mdb-react-ui-kit';
 
+
 let accepted = 0;
 let rejected = 0;
 const Navbar = () => {
@@ -383,14 +384,14 @@ const Navbar = () => {
       <ul class="navbar-nav gap-5 " >
       
         <li className="nav-item text-white">
-                                    <Link className="btn btn-dark btn-md" href="/dashboard_i">Dashboad</Link>
+                                    <a className="btn btn-dark btn-md" href="/dashboard_i">Dashboad</a>
                                 </li>
                                
                                 <li class="nav-item text-white">
-          <Link class="btn btn-dark btn-md" href="/upload">Upload</Link>
+          <a class="btn btn-dark btn-md" href="/upload">Upload</a>
         </li>
                                 <li className="nav-item text-white">
-                                    <Link className="btn btn-dark btn-md" href='/front'>SignOut</Link>
+                                    <a className="btn btn-dark btn-md" href='/front'>SignOut</a>
                                 </li>
        
       

@@ -3,7 +3,7 @@ import { auth, googleAuthProvider, firestore } from '../lib/firebase'
 import { useCookies } from "react-cookie";
 import { useState } from 'react';
 import { useRouter } from 'next/router';
-import Link from 'next/link';
+
 const Navbar = () => {
     return (
         <nav class="navbar navbar-expand-lg  navbar navbar-dark bg-dark gap-5 ">
@@ -14,10 +14,10 @@ const Navbar = () => {
         <div class="collapse navbar-collapse " id="navbarNavDropdown">
           <ul class="navbar-nav gap-5 " >
             <li class="nav-item text-white ">
-              <Link class="btn btn-dark btn-md" href="/verifier">Verifier <span class="sr-only"></span></Link>
+              <a class="btn btn-dark btn-md" href="/verifier">Verifier <span class="sr-only"></span></a>
             </li>
             <li class="nav-item text-white">
-              <Link class="btn btn-dark btn-md" href="/issuer">Issuer</Link>
+              <a class="btn btn-dark btn-md" href="/issuer">Issuer</a>
             </li>
             
            
@@ -71,7 +71,7 @@ const Navbar = () => {
   };
 
 
-export default function Issuer() {
+export default function issuer() {
   const [Auth, setAuth] = useState({ uid: null, email: null, type: null });
   const [cookies, setCookie] = useCookies(["user"]);
   const [loading, setLoading] = useState(false);

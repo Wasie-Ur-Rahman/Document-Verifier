@@ -26,14 +26,14 @@ const Navbar = () => {
           <a class="btn btn-dark btn-md" href="/issuer">Issuer</a>
         </li> */}
         <li className="nav-item text-white">
-                                    <Link className="btn btn-dark btn-md" href="/dashboard_v">Dashboad</Link>
+                                    <a className="btn btn-dark btn-md" href="/dashboard_v">Dashboad</a>
                                 </li>
                                
                                 {/* <li class="nav-item text-white">
           <a class="btn btn-dark btn-md" href="/upload">Upload</a>
         </li> */}
                                 <li className="nav-item text-white">
-                                    <Link className="btn btn-dark btn-md" href='/front'>SignOut</Link>
+                                    <a className="btn btn-dark btn-md" href='/front'>SignOut</a>
                                 </li>
        
       

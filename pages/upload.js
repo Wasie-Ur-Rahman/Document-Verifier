@@ -106,12 +106,12 @@
 // export default upload
 
 
+
 import React, { useRef } from 'react'
 import { useState } from 'react';
 import { storage, firestore } from '../lib/firebase';
 import { useCookies } from "react-cookie";
 import styles from "../styles/upload.module.css"
-import Link from 'next/link';
 const Navbar = () => {
   return (
     <nav class="navbar navbar-expand-lg  navbar navbar-dark bg-dark gap-5 ">
@@ -123,14 +123,14 @@ const Navbar = () => {
       <ul class="navbar-nav gap-5 " >
       
         <li className="nav-item text-white">
-                                    <Link className="btn btn-dark btn-md" href="/dashboard_i">Dashboad</Link>
+                                    <a className="btn btn-dark btn-md" href="/dashboard_i">Dashboad</a>
                                 </li>
                                
                                 <li class="nav-item text-white">
-          <Link class="btn btn-dark btn-md" href="/upload">Upload</Link>
+          <a class="btn btn-dark btn-md" href="/upload">Upload</a>
         </li>
                                 <li className="nav-item text-white">
-                                    <Link className="btn btn-dark btn-md" href='/front'>SignOut</Link>
+                                    <a className="btn btn-dark btn-md" href='/front'>SignOut</a>
                                 </li>
        
       
